@@ -1,21 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Play Submission Form</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        .container {
-            margin: auto;
-            width: 50%;
-            border: solid 1px #ccc;
-            padding: 20px;
-            border-radius: 5px;
-        }
-        textarea {
-            width: 100%;
-            height: 100px;
-            margin-bottom: 20px;
-            padding: 10
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Describe Your Play</title>
+</head>
+<body>
+
+    <h1>Describe Your Play</h1>
+
+    <form id="playDescriptionForm">
+        <div>
+            <label for="playDescription">Play Description:</label>
+            <textarea id="playDescription" name="playDescription" rows="4" cols="50" placeholder="Describe your play here..."></textarea>
+        </div>
+
+        <div>
+            <label for="characters">Characters:</label>
+            <textarea id="characters" name="characters" rows="4" cols="50" placeholder="List your characters here..."></textarea>
+        </div>
+
+        <div>
+            <label for="script">Script:</label>
+            <textarea id="script" name="script" rows="8" cols="50" placeholder="Write your script here..."></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
